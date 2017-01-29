@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.3.2/dist/aframe-altspace-component.min.js"></script>
+
+</head>
+
+<body>
+  <a-scene altspace=fullspace:true>
+
+    <a-assets>
+      <a-asset-item id="base" src="https://rawgit.com/Lia021/model/master/lia%20theater2.dae"></a-asset-item>
+      <a-asset-item id="chair" src="https://rawgit.com/Lia021/model/master/lia%20theather%20chair.dae"></a-asset-item>
+
+    </a-assets>
+
+
+    <!--sky-->
+    <a-sky radius="800" src="http://i.imgur.com/JaI0qA5.jpg"></a-sky>
+    <!--model-->
+
+    <a-entity position="0 30.2 0" n-mesh-collider="enabled: true; type: environment" collada-model="#base"></a-entity>
+
+    <!--model2-->
+
+    <a-entity position="6 30.1 0" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model3-->
+
+    <a-entity position="6.1 30.1 -6" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model4-->
+
+    <a-entity position="6 30.1 6" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model5-->
+
+    <a-entity position="9.1 30.1 -6" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model6-->
+
+    <a-entity position="9.1 30.1 0" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model7-->
+
+    <a-entity position="9.1 30.1 6" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model8-->
+
+    <a-entity position="12.1 30.1 -6" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model9-->
+
+    <a-entity position="12 30.1 0" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model10-->
+
+    <a-entity position="12.1 30.1 6" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model11-->
+
+    <a-entity position="15.1 30.1 -6" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model12-->
+
+    <a-entity position="15 30.1 0" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model13-->
+
+    <a-entity position="15.1 30.1 6" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model14-->
+
+    <a-entity position="18.1 30.1 -6" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model15-->
+
+    <a-entity position="18 30.1 0" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+
+    <!--model16-->
+    <a-entity position="18.1 30.2 6" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
+    <!--second floor-->
+    <a-box src="http://i.imgur.com/Igynh8F.jpg" rotation="-90 0 0" width="30" height="23" depth="0.1" position="6 30 0" n-mesh-collider="enabled: true; type: environment"> </a-box>
+    <!--lift-->
+    <a-entity class='tractorbeam' position='0 0 13.3'>
+      <a-cylinder position='0 19 0' material='color: #77A3DA' side="double" opacity="0.15" rotation='0 45 0' radius='1.5' height='39' class="not-clickable" altspace-cursor-collider="enabled: false"></a-cylinder>
+      <a-box id="lift" material="visible: false" n-sound="res: ui/notify; volume: 1; oneshot: true; on: animationstart" depth="3" height=".1" width="3" position='0 -.1 0' n-mesh-collider="type: environment">
+        <a-animation begin='up' attribute="position" direction='normal' from='0 -.1 0' to='0 30 0' ease-out='linear' fill='both' dur='20000' repeat='0' />
+      </a-box>
+
+      <a-entity id='upbutton' geometry="primitive: sphere; radius: .1" material='color: #1DD100' position="1 1 -1.5" sync-color wire="on: click; emit: up; targets: #lift" wire__0="on: click; emit: buttonchange; targets: #upbutton">
+        <a-animation begin='buttonchange' attribute="material.color" from='red' to='#1DD100' delay='20000' dur='200' fill='both' repeat='0' direction='backwards' />
+      </a-entity>
+      <a-entity n-billboard n-text="fontSize: 2; text: up" position="1 1.5 -1.5"></a-entity>
+    </a-entity>
+
+
+
+
+    <a-sphere position='0 40 13.3' color='#FFFFFF' radius="2.5" geometry="segmentsWidth: 8; segmentsHeight: 8">
+      <a-animation to='0 360 0' easing='linear' dur='250' repeat='indefinite' />
+    </a-sphere>
+
+    <a-sphere position='0 40 13.5' color='#77A3DA' radius="3" opacity="0.15"></a-sphere>
+
+    <a-cylinder position='0 38 13.3' material='src: http://i.imgur.com/POncNjM.jpg' side="double" open-ended="true" radius='1.6' height='4'>
+      <a-animation to='0 360 0' easing='linear' dur='250' repeat='indefinite' />
+    </a-cylinder>
+    <!--ground-->
+    <a-circle src="http://i.imgur.com/ZnNLY02.jpg" radius="3" position="0 0.1 0" rotation="-90 0 0" altspace-cursor-collider="enabled: false"></a-circle>
+    <!--spawn base-->
+    <a-cylinder src="http://i.imgur.com/tfxJXVe.jpg" height="3" radius="3" position="0 1.50 0" side="double" altspace-cursor-collider="enabled: false"></a-cylinder>
+    <!--altspace sphere-->
+    <a-sphere src="http://i.imgur.com/N1VgGox.jpg" radius="0.5" position="0 2.10 -1">
+      <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
+      </a-animation>
+    </a-sphere>
+
+
+
+
+
+</body>
+
+</html>

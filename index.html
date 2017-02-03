@@ -28,10 +28,11 @@
     <a-assets>
       <a-asset-item id="base" src="https://rawgit.com/Lia021/model/master/lia%20theater2.dae"></a-asset-item>
       <a-asset-item id="chair" src="https://rawgit.com/Lia021/model/master/lia%20theather%20chair.dae"></a-asset-item>
-      <a-asset-item id="sign" src="https://rawgit.com/Lia021/model/master/altspace.dae"></a-asset-item>
+      <a-asset-item id="sign" src="https://rawgit.com/Lia021/theater-space/master/Altspace%20symbol1.dae"></a-asset-item>
       <a-asset-item id="lobby-sign" src="https://rawgit.com/Lia021/theater-space/master/lobby%20sign.dae"></a-asset-item>
       <a-asset-item id="theatre-sign" src="https://rawgit.com/Lia021/theater-space/master/welcome%20theatre.dae"></a-asset-item>
-       <a-asset-item id="snacks" src="https://rawgit.com/Lia021/theater-space/master/snacksand%20Drinks.dae"></a-asset-item>
+      <a-asset-item id="platrom" src="https://rawgit.com/Lia021/theater-space/master/space-platrom.dae"></a-asset-item>
+      <a-asset-item id="snacks" src="https://rawgit.com/Lia021/theater-space/master/snacksand%20Drinks.dae"></a-asset-item>
     </a-assets>
 
 
@@ -100,12 +101,12 @@
     <!--model16-->
     <a-entity position="18.1 30.2 6" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#chair"></a-entity>
     <!--model17-->
-    <a-entity position="22 30.2 6" rotation="0 180 0" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
+    <a-entity position="22 31 6" rotation="0 180 0" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-entity>
     <!--model18-->
-    <a-entity position="22 30.2 -6" rotation="0 180 0" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
+    <a-entity position="22 31 -6" rotation="0 180 0" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-entity>
@@ -114,28 +115,29 @@
     <!--model20-->
     <a-entity position="-2 31 10.50" rotation="0 -90 0" n-mesh-collider="enabled: true; type: environment" collada-model="#theatre-sign"></a-entity>
     <!--model21-->
-    <a-entity position="15 30.2 12" rotation="0 180 0" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
+    <a-entity position="15 31 12" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-entity>
-     <!--model22-->
-    <a-entity position="5 30.2 12" rotation="0 180 0" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
-      <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
-      </a-animation>
-    </a-entity>  
-     <!--model23-->
-    <a-entity position="15 30.2 -12" rotation="0 180 0" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
+    <!--model22-->
+    <a-entity position="5 31 12" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-entity>
-     <!--model24-->
-    <a-entity position="5 30.2 -12" rotation="0 180 0" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
+    <!--model23-->
+    <a-entity position="15 31 -12" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
+      <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
+      </a-animation>
+    </a-entity>
+    <!--model24-->
+    <a-entity position="5 31 -12" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-entity>
     <!--model25-->
-
-    <a-entity position="3 8 -22" rotation="0 -90 0" altspace-cursor-collider="enabled: false" collada-model="#snacks"></a-entity>
+    <a-entity position="3 8 -22" rotation="0 -90 0" n-mesh-collider="enabled: true; type: environment" collada-model="#snacks"></a-entity>
+    <!--model26-->
+    <a-entity position="2 1 -15" n-mesh-collider="enabled: true; type: environment" collada-model="#platrom"></a-entity>
     <!--second floor-->
     <a-box src="http://i.imgur.com/Igynh8F.jpg" rotation="-90 0 0" width="30" height="23" depth="0.1" position="6 30 0" n-mesh-collider="enabled: true; type: environment"> </a-box>
     <!--lift-->
@@ -204,7 +206,7 @@
     <!--boxstack-->
     <a-entity n-spawner='res: interactables/box' position="-4 10 -15"></a-entity>
     <!--disco-->
-    <a-sphere position="3 16 -15" src="http://i.imgur.com/JaPVF8u.jpg" radius="2" segments-height="17">
+    <a-sphere position="3 16 -15" src="http://i.imgur.com/JaPVF8u.jpg" n-sphere-collider="type: environment; radius: 2"radius="2" segments-height="17">
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-sphere>

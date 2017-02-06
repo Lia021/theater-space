@@ -33,7 +33,7 @@
       <a-asset-item id="snacks" src="https://rawgit.com/Lia021/theater-space/master/snack%20table/snacksand%20Drinks.dae"></a-asset-item>
       <a-asset-item id="fort" src="https://rawgit.com/Lia021/theater-space/master/base/spacebase.dae"></a-asset-item>
       <a-asset-item id="floor" src="https://rawgit.com/Lia021/theater-space/master/base/base-floor.dae"></a-asset-item>
-
+      <a-asset-item id="table" src="https://rawgit.com/Lia021/theater-space/master/Table/Candyshop%20table.dae"></a-asset-item>
     </a-assets>
 
 
@@ -120,39 +120,41 @@
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-entity>
-    <!--model22-->
+    <!--model19-->
     <a-entity position="5 31 12" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-entity>
-    <!--model23-->
+    <!--model20-->
     <a-entity position="15 31 -12" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-entity>
-    <!--model24-->
+    <!--model21-->
     <a-entity position="5 31 -12" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-entity>
-    <!--model25-->
+    <!--model22-->
     <a-entity position="3 8 -22" rotation="0 -90 0" n-mesh-collider="enabled: true; type: environment" collada-model="#snacks"></a-entity>
-    <!--model26-->
+    <!--model23-->
     <a-entity position="-15 1.50 -15" n-mesh-collider="enabled: true; type: environment" collada-model="#platrom">
       <a-animation attribute="position" direction='alternate' from='-15 1.50 -15' to='-15 2 -15' ease-in-out='linear' dur='1200' repeat='indefinite' />
     </a-entity>
-    <!--model27-->
+    <!--model24-->
     <a-entity position="-10 2 -15" n-mesh-collider="enabled: true; type: environment" collada-model="#platrom">
       <a-animation attribute="position" direction='alternate' from='-10 1 -15' to='-10 1.50 -15' ease-in-out='linear' dur='1800' repeat='indefinite' />
     </a-entity>
-    <!--model28-->
+    <!--model25-->
     <a-entity position="-12.5 1 -19" n-mesh-collider="enabled: true; type: environment" collada-model="#platrom">
       <a-animation attribute="position" direction='alternate' from='-12.5 2 -19' to='-12.5 2.50 -19' ease-in-out='linear' dur='1100' repeat='indefinite' />
     </a-entity>
-    <!--model29-->
-    <a-entity position="2 0 -30" rotation="0 190 0" collada-model="#fort"></a-entity>
-    <!--model30-->
-    <a-entity position="2 0.02 -30" rotation="0 189 0" collada-model="#floor"></a-entity>
+    <!--model26-->
+    <a-entity position="2 0 -30" rotation="0 190 0"  altspace-cursor-collider="enabled: false"collada-model="#fort"></a-entity>
+    <!--model27-->
+    <a-entity position="2 0.02 -30" rotation="0 189 0" altspace-cursor-collider="enabled: false" collada-model="#floor"></a-entity>
+    <!--model28-->
+    <a-entity position="2 0.02 -30.70" n-mesh-collider="enabled: true; type: environment"rotation="0 189 0" collada-model="#table"></a-entity>
     <!--text3-->
     <a-entity n-billboard n-text="fontSize: 2; text:Candyshop" position="1 1.70 -27"></a-entity>
     <!--second floor-->

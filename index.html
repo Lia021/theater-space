@@ -29,13 +29,11 @@
       <a-asset-item id="base" src="https://rawgit.com/Lia021/model/master/theater/lia%20theater2.dae"></a-asset-item>
       <a-asset-item id="chair" src="https://rawgit.com/Lia021/model/master/theaterchair/lia%20theather%20chair.dae"></a-asset-item>
       <a-asset-item id="sign" src="https://rawgit.com/Lia021/theater-space/master/Altspace%20symbol/Altspace%20symbol1.dae"></a-asset-item>
-      <a-asset-item id="lobby-sign" src="https://rawgit.com/Lia021/theater-space/master/lobby/lobby%20sign.dae"></a-asset-item>
-      <a-asset-item id="theatre-sign" src="https://rawgit.com/Lia021/theater-space/master/theater%20sign/welcome%20theatre.dae"></a-asset-item>
       <a-asset-item id="platrom" src="https://rawgit.com/Lia021/theater-space/master/platrom/space-platrom.dae"></a-asset-item>
       <a-asset-item id="snacks" src="https://rawgit.com/Lia021/theater-space/master/snack%20table/snacksand%20Drinks.dae"></a-asset-item>
       <a-asset-item id="fort" src="https://rawgit.com/Lia021/theater-space/master/base/spacebase.dae"></a-asset-item>
       <a-asset-item id="floor" src="https://rawgit.com/Lia021/theater-space/master/base/base-floor.dae"></a-asset-item>
-      <a-asset-item id="candy-sign" src="https://rawgit.com/Lia021/theater-space/master/candyshop/candy.dae"></a-asset-item>
+
     </a-assets>
 
 
@@ -113,10 +111,10 @@
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-entity>
-    <!--model19-->
-    <a-entity position="3 9 -15" rotation="0 -90 0" n-mesh-collider="enabled: true; type: environment" collada-model="#lobby-sign"></a-entity>
-    <!--model20-->
-    <a-entity position="-2 31 10.50" rotation="0 -90 0" n-mesh-collider="enabled: true; type: environment" collada-model="#theatre-sign"></a-entity>
+    <!--text1-->
+    <a-entity n-billboard n-text="fontSize: 3; text:Lobby" position="3 10.70 -15"></a-entity>
+    <!--text2-->
+    <a-entity n-billboard n-text="fontSize: 2; text:Theatre" position="-2 32 10.50"></a-entity>
     <!--model21-->
     <a-entity position="15 31 12" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
@@ -155,8 +153,8 @@
     <a-entity position="2 0 -30" rotation="0 190 0" collada-model="#fort"></a-entity>
     <!--model30-->
     <a-entity position="2 0.02 -30" rotation="0 189 0" collada-model="#floor"></a-entity>
-    <!--model31-->
-    <a-entity position="1 0.02 -27"n-mesh-collider="enabled: true; type: environment"rotation="0 -90 0" collada-model="#candy-sign"></a-entity>
+    <!--text3-->
+    <a-entity n-billboard n-text="fontSize: 2; text:Candyshop" position="1 1.70 -27"></a-entity>
     <!--second floor-->
     <a-box src="http://i.imgur.com/Igynh8F.jpg" rotation="-90 0 0" width="30" height="23" depth="0.1" position="6 30 0" n-mesh-collider="enabled: true; type: environment"> </a-box>
     <!--lift-->

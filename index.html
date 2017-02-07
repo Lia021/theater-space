@@ -34,15 +34,16 @@
       <a-asset-item id="fort" src="https://rawgit.com/Lia021/theater-space/master/base/spacebase.dae"></a-asset-item>
       <a-asset-item id="floor" src="https://rawgit.com/Lia021/theater-space/master/base/base-floor.dae"></a-asset-item>
       <a-asset-item id="table" src="https://rawgit.com/Lia021/theater-space/master/Table/Candyshop%20table.dae"></a-asset-item>
-       <a-asset-item id="bowel" src="https://rawgit.com/Lia021/theater-space/master/Candybowel/candy-bowel.dae"></a-asset-item>
-       <a-asset-item id="candy" src="https://rawgit.com/Lia021/theater-space/master/candy/spacecandy.dae"></a-asset-item>
+      <a-asset-item id="bowel" src="https://rawgit.com/Lia021/theater-space/master/Candybowel/candy-bowel.dae"></a-asset-item>
+      <a-asset-item id="candy" src="https://rawgit.com/Lia021/theater-space/master/candy/spacecandy.dae"></a-asset-item>
       <a-asset-item id="spacedonut" src="https://rawgit.com/Lia021/theater-space/master/Donut/spaceDonut.dae"></a-asset-item>
       <a-asset-item id="register" src="https://rawgit.com/Lia021/theater-space/master/register/cash%20register.dae"></a-asset-item>
+      <a-asset-item id="rocket" src="https://rawgit.com/Lia021/theater-space/master/Rocket/rocket2/space-rocket2.dae"></a-asset-item>
     </a-assets>
 
 
     <!--sky-->
-    <a-sky radius="800" src="https://rawgit.com/Lia021/theater-space/master/space.jpg"></a-sky>
+    <a-sky radius="800" src="http://i.imgur.com/JaI0qA5.jpg"></a-sky>
     <!--model-->
 
     <a-entity position="0 30.2 0" n-mesh-collider="enabled: true; type: environment" collada-model="#base"></a-entity>
@@ -115,10 +116,7 @@
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
       </a-animation>
     </a-entity>
-    <!--text1-->
-    <a-entity n-billboard n-text="fontSize: 3; text:Lobby" position="3 10.70 -15"></a-entity>
-    <!--text2-->
-    <a-entity n-billboard n-text="fontSize: 2; text:Theatre" position="-2 32 10.50"></a-entity>
+
     <!--model21-->
     <a-entity position="15 31 12" n-mesh-collider="enabled: true; type: environment" collada-model="#sign">
       <a-animation attribute="rotation" dur="10000.5" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear">
@@ -141,8 +139,7 @@
     </a-entity>
     <!--model22-->
     <a-entity position="3 9 -22" rotation="0 -90 0" n-mesh-collider="enabled: true; type: environment" collada-model="#snacks"></a-entity>
-      <!--text3-->
-    <a-entity n-billboard n-text="fontSize: 2; text:Snacks and Drinks" position="2 9 -21"></a-entity>
+
     <!--model23-->
     <a-entity position="-15 1.50 -15" n-mesh-collider="enabled: true; type: environment" collada-model="#platrom">
       <a-animation attribute="position" direction='alternate' from='-15 1.50 -15' to='-15 2 -15' ease-in-out='linear' dur='1200' repeat='indefinite' />
@@ -156,19 +153,35 @@
       <a-animation attribute="position" direction='alternate' from='-12.5 2 -19' to='-12.5 2.50 -19' ease-in-out='linear' dur='1100' repeat='indefinite' />
     </a-entity>
     <!--model26-->
-    <a-entity position="2 0 -30" rotation="0 190 0"  altspace-cursor-collider="enabled: false"collada-model="#fort"></a-entity>
+    <a-entity position="2 0 -30" rotation="0 190 0" altspace-cursor-collider="enabled: false" collada-model="#fort"></a-entity>
     <!--model27-->
     <a-entity position="2 0.02 -30" rotation="0 189 0" altspace-cursor-collider="enabled: false" collada-model="#floor"></a-entity>
     <!--model28-->
-    <a-entity position="2 0.02 -30.70" n-mesh-collider="enabled: true; type: environment"rotation="0 189 0" collada-model="#table"></a-entity>
-     <!--model29-->
-    <a-entity position="2 0.80 -31" n-mesh-collider="enabled: true; type: environment"rotation="0 189 0" collada-model="#bowel"></a-entity>
-       <!--model30-->
-    <a-entity position="1.40 0.85 -30.60" n-mesh-collider="enabled: true; type: environment"rotation="0 189 0" collada-model="#candy"></a-entity>
-        <!--model31-->
-    <a-entity position="2 0.85 -30.20" n-mesh-collider="enabled: true; type: environment"rotation="0 189 0" collada-model="#spacedonut"></a-entity>
-        <!--model32-->
-    <a-entity position="1.33 0 -27.50" n-mesh-collider="enabled: true; type: environment"rotation="0 189 0" collada-model="#register"></a-entity>
+    <a-entity position="2 0.02 -30.70" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#table"></a-entity>
+    <!--model29-->
+    <a-entity position="2 0.80 -31" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#bowel"></a-entity>
+    <!--model30-->
+    <a-entity position="1.40 0.85 -30.60" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#candy"></a-entity>
+    <!--model31-->
+    <a-entity position="2 0.85 -30.20" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#spacedonut"></a-entity>
+    <!--model32-->
+    <a-entity position="1.33 0 -27.50" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#register"></a-entity>
+    <!--model33-->
+    <a-entity position="17 0 -13" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#rocket">
+      <a-animation attribute="position" direction='alternate' from='17 -2 -13' to='17 30 -13' ease-in-out='linear' dur='10700' repeat='indefinite' />
+    </a-entity>
+    <!--fire for rocket-->
+    <a-entity n-object='res:effects/fire'>
+      <a-animation attribute="position" direction='alternate' from='17 -2 -13' to='17 30 -13' ease-in-out='linear' dur='10500' repeat='indefinite' /></a-entity>
+    <!--smoke for rocket-->
+    <a-entity n-object='res:effects/steam'>
+      <a-animation attribute="position" direction='alternate' from='17 -2 -13' to='17 28 -13' ease-in-out='linear' dur='10600' repeat='indefinite' /></a-entity>
+    <!--text1-->
+    <a-entity n-billboard n-text="fontSize: 3; text:Lobby" position="3 10.70 -15"></a-entity>
+    <!--text2-->
+    <a-entity n-billboard n-text="fontSize: 2; text:Theatre" position="-2 32 10.50"></a-entity>
+    <!--text3-->
+    <a-entity n-billboard n-text="fontSize: 2; text:Snacks and Drinks" position="2 9 -21"></a-entity>
     <!--text4-->
     <a-entity n-billboard n-text="fontSize: 2; text:Sweetshop" position="1 1.70 -27"></a-entity>
     <!--second floor-->

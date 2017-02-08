@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
-   <script src="http://sdk.altvr.com/libs/altspace.js/0.28.1/altspace.min.js"></script>
+  <script src="http://sdk.altvr.com/libs/altspace.js/0.28.1/altspace.min.js"></script>
   <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.3.2/dist/aframe-altspace-component.min.js"></script>
   <script>
     altspace.getThreeJSTrackingSkeleton().then(function (skeleton) {
@@ -41,6 +41,7 @@
       <a-asset-item id="register" src="https://rawgit.com/Lia021/theater-space/master/register/cash%20register.dae"></a-asset-item>
       <a-asset-item id="rocket" src="https://rawgit.com/Lia021/theater-space/master/Rocket/rocket2/space-rocket2.dae"></a-asset-item>
       <a-asset-item id="canada" src="https://rawgit.com/Lia021/theater-space/master/canada/canada%20house.dae"></a-asset-item>
+      <a-asset-item id="canadatable" src="https://rawgit.com/Lia021/theater-space/master/stone-table/space-table.dae"></a-asset-item>
     </a-assets>
 
 
@@ -178,15 +179,19 @@
     <!--smoke for rocket-->
     <a-entity n-object='res:effects/steam'>
       <a-animation attribute="position" direction='alternate' from='17 -2 -13' to='17 28 -13' ease-in-out='linear' dur='10700' repeat='indefinite' /></a-entity>
-   <!--model34-->
-     <a-entity position="-15 0 6" rotation="0 90 0" altspace-cursor-collider="enabled: false" collada-model="#canada"></a-entity>
-        <!--canadain song-->
-  
-    <a-entity position="-15 0.40 6.50">
-    <a-entity id="pc-canada" n-sound="on: canada; src: https://rawgit.com/Lia021/sound/master/O_Canada_-_Canada.ogg;"></a-entity>
-    <a-entity id="gear-canada" n-sound="on: canada; src: https://rawgit.com/Lia021/sound/master/O%20Canada%20-%20Canada.mp3;"></a-entity>
-      <a-box wire="on: click; emit: canada; targets: #pc-canada, #gear-canada;"color="#A7B7BC"></a-box>
-</a-entity>
+    <!--model34-->
+    <a-entity position="-15 0 6" rotation="0 90 0" altspace-cursor-collider="enabled: false" collada-model="#canada"></a-entity>
+    <!--model35-->
+    <a-entity position="-15 0 6" n-mesh-collider="enabled: true; type: environment" collada-model="#canadatable"></a-entity>
+    <!--model36-->
+    <a-entity position="-15 1 6" n-mesh-collider="enabled: true; type: environment" rotation="0 90 0" collada-model="#candy"></a-entity>
+    <!--canadain song-->
+
+    <a-entity position="-15 1.10 6.30">
+      <a-entity id="pc-canada" n-sound="on: canada; src: https://rawgit.com/Lia021/sound/master/O_Canada_-_Canada.ogg;"></a-entity>
+      <a-entity id="gear-canada" n-sound="on: canada; src: https://rawgit.com/Lia021/sound/master/O%20Canada%20-%20Canada.mp3;"></a-entity>
+      <a-box wire="on: click; emit: canada; targets: #pc-canada, #gear-canada;" depth="0.3" height="0.3" width="0.3" color="#A7B7BC"></a-box>
+    </a-entity>
     <!--text1-->
     <a-entity n-billboard n-text="fontSize: 3; text:Lobby" position="3 10.70 -15"></a-entity>
     <!--text2-->

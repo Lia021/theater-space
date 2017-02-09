@@ -42,6 +42,7 @@
       <a-asset-item id="rocket" src="https://rawgit.com/Lia021/theater-space/master/Rocket/rocket2/space-rocket2.dae"></a-asset-item>
       <a-asset-item id="canada" src="https://rawgit.com/Lia021/theater-space/master/canada/canada%20house.dae"></a-asset-item>
       <a-asset-item id="canadatable" src="https://rawgit.com/Lia021/theater-space/master/stone-table/space-table.dae"></a-asset-item>
+      <a-asset-item id="digimon" src="https://rawgit.com/Lia021/theater-space/master/Heart/creepy-Heart.dae"></a-asset-item>
     </a-assets>
 
 
@@ -185,12 +186,21 @@
     <a-entity position="-15 0 6" n-mesh-collider="enabled: true; type: environment" collada-model="#canadatable"></a-entity>
     <!--model36-->
     <a-entity position="-15 1 6" n-mesh-collider="enabled: true; type: environment" rotation="0 90 0" collada-model="#candy"></a-entity>
+    <!--model36-->
+    <a-entity position="1 0 -32.12" n-mesh-collider="enabled: true; type: environment" rotation="0 -90 0" collada-model="#digimon"></a-entity>
     <!--canadain song-->
 
     <a-entity position="-15 1.10 6.30">
       <a-entity id="pc-canada" n-sound="on: canada; src: https://rawgit.com/Lia021/sound/master/O_Canada_-_Canada.ogg;"></a-entity>
       <a-entity id="gear-canada" n-sound="on: canada; src: https://rawgit.com/Lia021/sound/master/O%20Canada%20-%20Canada.mp3;"></a-entity>
       <a-box wire="on: click; emit: canada; targets: #pc-canada, #gear-canada;" depth="0.3" height="0.3" width="0.3" color="#A7B7BC"></a-box>
+    </a-entity>
+    <!--digimon song-->
+
+    <a-entity position="0.5 0.2 -32.12">
+      <a-entity id="pc-canada" n-sound="on: canada; src:https://rawgit.com/Lia021/sound/master/Digimon_-_Digimon.ogg;"></a-entity>
+      <a-entity id="gear-canada" n-sound="on: canada; src:https://rawgit.com/Lia021/sound/master/Digimon%20-%20Digimon.mp3;"></a-entity>
+      <a-box wire="on: click; emit: canada; targets: #pc-canada, #gear-canada;" depth="0.3" height="0.3" width="0.3" color="#6A92EF"></a-box>
     </a-entity>
     <!--text1-->
     <a-entity n-billboard n-text="fontSize: 3; text:Lobby" position="3 10.70 -15"></a-entity>

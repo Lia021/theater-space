@@ -44,6 +44,7 @@
       <a-asset-item id="canadatable" src="https://rawgit.com/Lia021/theater-space/master/stone-table/space-table.dae"></a-asset-item>
       <a-asset-item id="digimon" src="https://rawgit.com/Lia021/theater-space/master/Heart/creepy-Heart.dae"></a-asset-item>
       <a-asset-item id="power" src="https://rawgit.com/Lia021/theater-space/master/space-power/power2.dae"></a-asset-item>
+      <a-asset-item id="moi" src="https://rawgit.com/Lia021/theater-space/master/head/my%20head.dae"></a-asset-item>
     </a-assets>
 
 
@@ -211,14 +212,20 @@
     <a-entity n-billboard n-text="fontSize: 2; text:Snacks and Drinks" position="2 9 -21"></a-entity>
     <!--text4-->
     <a-entity n-billboard n-text="fontSize: 2; text:Sweetshop" position="1 1.70 -27"></a-entity>
-    <!--power altspace-->
+    <!--power-->
 <a-entity position="0 5 0">
    <a-entity position="0 30 70"scale="4 4 4" n-mesh-collider="enabled: true; type: environment" rotation="0 -90 0" collada-model="#power">
    <a-animation attribute="rotation" dur="3500" easing="linear" repeat="indefinite" from="0 0 0" to="360 0 0"></a-animation>
  </a-entity>
   <a-animation attribute="rotation" dur="16000" easing="linear" repeat="indefinite" from="0 0 0" to="0 -360 0"></a-animation>
 </a-entity>  
-
+   <!--moi-->
+<a-entity position="0 5 0">
+   <a-entity position="0 30 70"scale="4 4 4" n-mesh-collider="enabled: true; type: environment" collada-model="#moi">
+   <a-animation attribute="rotation" dur="3500" easing="linear" repeat="indefinite" from="0 0 0" to="0 360 0"></a-animation>
+ </a-entity>
+  <a-animation attribute="rotation" dur="16000" easing="linear" repeat="indefinite" from="0 0 0" to="360 0 0"></a-animation>
+</a-entity>  
     <!--second floor-->
     <a-box src="http://i.imgur.com/Igynh8F.jpg" rotation="-90 0 0" width="30" height="23" depth="0.1" position="6 30 0" n-mesh-collider="enabled: true; type: environment"> </a-box>
     <!--lift-->

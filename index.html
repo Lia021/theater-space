@@ -45,6 +45,7 @@
       <a-asset-item id="digimon" src="https://rawgit.com/Lia021/theater-space/master/Heart/creepy-Heart.dae"></a-asset-item>
       <a-asset-item id="power" src="https://rawgit.com/Lia021/theater-space/master/space-power/power2.dae"></a-asset-item>
       <a-asset-item id="moi" src="https://rawgit.com/Lia021/theater-space/master/head/my%20head.dae"></a-asset-item>
+       <a-asset-item id="cane" src="https://rawgit.com/Lia021/theater-space/master/cane/candy%20cane.dae"></a-asset-item>
     </a-assets>
 
 
@@ -225,6 +226,13 @@
    <a-animation attribute="rotation" dur="3500" easing="linear" repeat="indefinite" from="0 0 0" to="0 360 0"></a-animation>
  </a-entity>
   <a-animation attribute="rotation" dur="16000" easing="linear" repeat="indefinite" from="0 0 0" to="360 0 0"></a-animation>
+</a-entity>  
+     <!--cane-->
+<a-entity position="0 5 0">
+   <a-entity position="0 30 70"scale="4 4 4" n-mesh-collider="enabled: true; type: environment" collada-model="#cane">
+   <a-animation attribute="rotation" dur="3500" easing="linear" repeat="indefinite" from="0 0 0" to="360 0 0"></a-animation>
+ </a-entity>
+  <a-animation attribute="rotation" dur="17000" easing="linear" repeat="indefinite" from="0 0 0" to="360 360 0"></a-animation>
 </a-entity>  
     <!--second floor-->
     <a-box src="http://i.imgur.com/Igynh8F.jpg" rotation="-90 0 0" width="30" height="23" depth="0.1" position="6 30 0" n-mesh-collider="enabled: true; type: environment"> </a-box>

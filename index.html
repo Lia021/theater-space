@@ -43,6 +43,7 @@
       <a-asset-item id="canada" src="https://rawgit.com/Lia021/theater-space/master/canada/canada%20house.dae"></a-asset-item>
       <a-asset-item id="canadatable" src="https://rawgit.com/Lia021/theater-space/master/stone-table/space-table.dae"></a-asset-item>
       <a-asset-item id="digimon" src="https://rawgit.com/Lia021/theater-space/master/Heart/creepy-Heart.dae"></a-asset-item>
+      <a-asset-item id="power" src="https://rawgit.com/Lia021/theater-space/master/space-power/power2.dae"></a-asset-item>
     </a-assets>
 
 
@@ -198,9 +199,9 @@
     <!--digimon song-->
 
     <a-entity position="0.5 0.2 -32.12">
-      <a-entity id="pc-canada" n-sound="on: canada; src:https://rawgit.com/Lia021/sound/master/Digimon_-_Digimon.ogg;"></a-entity>
-      <a-entity id="gear-canada" n-sound="on: canada; src:https://rawgit.com/Lia021/sound/master/Digimon%20-%20Digimon.mp3;"></a-entity>
-      <a-box wire="on: click; emit: canada; targets: #pc-canada, #gear-canada;" depth="0.3" height="0.3" width="0.3" color="#6A92EF"></a-box>
+      <a-entity id="pc-digimon" n-sound="on: digimon; src:https://rawgit.com/Lia021/sound/master/Digimon_-_Digimon.ogg;"></a-entity>
+      <a-entity id="gear-digimon" n-sound="on: digimon; src:https://rawgit.com/Lia021/sound/master/Digimon%20-%20Digimon.mp3;"></a-entity>
+      <a-box wire="on: click; emit: digimon; targets: #pc-digimon, #gear-digimon;" depth="0.3" height="0.3" width="0.3" color="#6A92EF"></a-box>
     </a-entity>
     <!--text1-->
     <a-entity n-billboard n-text="fontSize: 3; text:Lobby" position="3 10.70 -15"></a-entity>
@@ -210,6 +211,14 @@
     <a-entity n-billboard n-text="fontSize: 2; text:Snacks and Drinks" position="2 9 -21"></a-entity>
     <!--text4-->
     <a-entity n-billboard n-text="fontSize: 2; text:Sweetshop" position="1 1.70 -27"></a-entity>
+    <!--power-->
+<a-entity position="0 5 0">
+   <a-entity position="0 30 70"scale="4 4 4" n-mesh-collider="enabled: true; type: environment" rotation="0 -90 0" collada-model="#power">
+   <a-animation attribute="rotation" dur="3500" easing="linear" repeat="indefinite" from="0 0 0" to="360 0 0"></a-animation>
+ </a-entity>
+  <a-animation attribute="rotation" dur="150000" easing="linear" repeat="indefinite" from="0 0 0" to="0 -360 0"></a-animation>
+</a-entity>  
+
     <!--second floor-->
     <a-box src="http://i.imgur.com/Igynh8F.jpg" rotation="-90 0 0" width="30" height="23" depth="0.1" position="6 30 0" n-mesh-collider="enabled: true; type: environment"> </a-box>
     <!--lift-->
@@ -329,7 +338,7 @@
     <a-entity n-spawner='res: interactables/basketball' position="-14 1 0"></a-entity>
     <a-entity n-spawner='res: interactables/soccerball' position="-14 1 -2"></a-entity>
     <a-entity n-spawner='res: interactables/bowling-pin' position="-14 1 -4"></a-entity>
-
+ 
 
 </body>
 

@@ -46,6 +46,10 @@
       <a-asset-item id="power" src="https://rawgit.com/Lia021/theater-space/master/space-power/power2.dae"></a-asset-item>
       <a-asset-item id="moi" src="https://rawgit.com/Lia021/theater-space/master/head/my%20head.dae"></a-asset-item>
        <a-asset-item id="cane" src="https://rawgit.com/Lia021/theater-space/master/cane/candy%20cane.dae"></a-asset-item>
+         <a-asset-item id="galery" src="https://rawgit.com/Lia021/theater-space/master/fort/space%20fort.dae"></a-asset-item>
+       <a-asset-item id="lounge" src="https://rawgit.com/Lia021/model/master/chair%202.dae"></a-asset-item>
+       <a-asset-item id="soup" src="https://rawgit.com/Lia021/theater-space/master/soup/c-soup.dae"></a-asset-item>
+      <a-asset-item id="icecream" src="https://rawgit.com/Lia021/theater-space/master/ice/c-ice.dae"></a-asset-item>
     </a-assets>
 
 
@@ -189,8 +193,26 @@
     <a-entity position="-15 0 6" n-mesh-collider="enabled: true; type: environment" collada-model="#canadatable"></a-entity>
     <!--model36-->
     <a-entity position="-15 1 6" n-mesh-collider="enabled: true; type: environment" rotation="0 90 0" collada-model="#candy"></a-entity>
-    <!--model36-->
+    <!--model37-->
     <a-entity position="1 0 -32.12" n-mesh-collider="enabled: true; type: environment" rotation="0 -90 0" collada-model="#digimon"></a-entity>
+    
+    
+    <!--model38-->
+
+    <a-entity position="30 0 0" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#galery"></a-entity>
+ <!--model39-->
+
+    <a-entity position="30 0 2" rotation="0 90 0" altspace-cursor-collider="enabled: false" collada-model="#lounge"></a-entity>
+     <!--model40-->
+    <a-entity position="30 0.02 -2" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#table"></a-entity>
+       <!--model40-->
+    <a-entity position="30 0.02 -2" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#table"></a-entity>
+      <!--model41-->
+    <a-entity position="30 0.80 -2" n-mesh-collider="enabled: true; type: environment" rotation="0 90 0" collada-model="#soup"></a-entity>
+      <!--model42-->
+    <a-entity position="29.60 0.80 -1.70" n-mesh-collider="enabled: true; type: environment" rotation="0 90 0" collada-model="#icecream"></a-entity>
+        <!--model31-->
+    <a-entity position="30.40 0.85 -1.70" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#spacedonut"></a-entity>
     <!--canadain song-->
 
     <a-entity position="-15 1.10 6.30">
@@ -205,6 +227,13 @@
       <a-entity id="gear-digimon" n-sound="on: digimon; src:https://rawgit.com/Lia021/sound/master/Digimon%20-%20Digimon.mp3;"></a-entity>
       <a-box wire="on: click; emit: digimon; targets: #pc-digimon, #gear-digimon;" depth="0.3" height="0.3" width="0.3" color="#6A92EF"></a-box>
     </a-entity>
+    <!--BFFsong-->
+
+    <a-entity position="32 0.2 -3">
+      <a-entity id="pc-BFF" n-sound="on: BFF; src:https://rawgit.com/Lia021/sound/master/BFF_-_BFF.ogg;"></a-entity>
+      <a-entity id="gear-BFF" n-sound="on: BFF; src:https://rawgit.com/Lia021/sound/master/BFF%20-%20BFF.mp3;"></a-entity>
+      <a-box wire="on: click; emit: BFF; targets: #pc-BFF, #gear-BFF;" depth="0.3" height="0.3" width="0.3" color="#E85248"></a-box>
+    </a-entity>
     <!--text1-->
     <a-entity n-billboard n-text="fontSize: 3; text:Lobby" position="3 10.70 -15"></a-entity>
     <!--text2-->
@@ -213,6 +242,8 @@
     <a-entity n-billboard n-text="fontSize: 2; text:Snacks and Drinks" position="2 9 -21"></a-entity>
     <!--text4-->
     <a-entity n-billboard n-text="fontSize: 2; text:Sweetshop" position="1 1.70 -27"></a-entity>
+    <!--text5-->
+    <a-entity n-billboard n-text="fontSize: 2; text:Reststop" position="25 1.70 2"></a-entity>
     <!--power-->
 <a-entity position="0 5 0">
    <a-entity position="0 30 70"scale="4 4 4" n-mesh-collider="enabled: true; type: environment" rotation="0 -90 0" collada-model="#power">

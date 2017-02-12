@@ -57,7 +57,7 @@
     <a-sky radius="800" src="http://i.imgur.com/JaI0qA5.jpg"></a-sky>
     <!--model-->
 
-    <a-entity position="0 30.2 0" n-mesh-collider="enabled: true; type: environment" collada-model="#base"></a-entity>
+    <a-entity position="0 30.2 0"  n-mesh-collider="type: environment; convex: false" collada-model="#base"></a-entity>
 
     <!--model2-->
 
@@ -149,34 +149,34 @@
       </a-animation>
     </a-entity>
     <!--model22-->
-    <a-entity position="3 9 -22" rotation="0 -90 0" n-mesh-collider="enabled: true; type: environment" collada-model="#snacks"></a-entity>
+    <a-entity position="3 9 -22" rotation="0 -90 0"  n-mesh-collider="type: environment; convex: false" collada-model="#snacks"></a-entity>
 
     <!--model23-->
-    <a-entity position="-15 1.50 -15" n-mesh-collider="enabled: true; type: environment" collada-model="#platrom">
+    <a-entity position="-15 1.50 -15"  n-mesh-collider="type: environment; convex: false" collada-model="#platrom">
       <a-animation attribute="position" direction='alternate' from='-15 1.50 -15' to='-15 2 -15' ease-in-out='linear' dur='1200' repeat='indefinite' />
     </a-entity>
     <!--model24-->
-    <a-entity position="-10 2 -15" n-mesh-collider="enabled: true; type: environment" collada-model="#platrom">
+    <a-entity position="-10 2 -15"  n-mesh-collider="type: environment; convex: false" collada-model="#platrom">
       <a-animation attribute="position" direction='alternate' from='-10 1 -15' to='-10 1.50 -15' ease-in-out='linear' dur='1800' repeat='indefinite' />
     </a-entity>
     <!--model25-->
-    <a-entity position="-12.5 1 -19" n-mesh-collider="enabled: true; type: environment" collada-model="#platrom">
+    <a-entity position="-12.5 1 -19"  n-mesh-collider="type: environment; convex: false" collada-model="#platrom">
       <a-animation attribute="position" direction='alternate' from='-12.5 2 -19' to='-12.5 2.50 -19' ease-in-out='linear' dur='1100' repeat='indefinite' />
     </a-entity>
     <!--model26-->
-    <a-entity position="2 0 -30" rotation="0 190 0" altspace-cursor-collider="enabled: false" collada-model="#fort"></a-entity>
+    <a-entity position="2 0 -30" rotation="0 190 0"  n-mesh-collider="type: environment; convex: false" collada-model="#fort"></a-entity>
     <!--model27-->
-    <a-entity position="2 0.02 -30" rotation="0 189 0" altspace-cursor-collider="enabled: false" collada-model="#floor"></a-entity>
+    <a-entity position="2 0.02 -30" rotation="0 189 0"  n-mesh-collider="type: environment; convex: false" collada-model="#floor"></a-entity>
     <!--model28-->
-    <a-entity position="2 0.02 -30.70" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#table"></a-entity>
+    <a-entity position="2 0.02 -30.70"  n-mesh-collider="type: environment; convex: false" rotation="0 189 0" collada-model="#table"></a-entity>
     <!--model29-->
-    <a-entity position="2 0.80 -31" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#bowel"></a-entity>
+    <a-entity position="2 0.80 -31"  n-mesh-collider="type: environment; convex: false" rotation="0 189 0" collada-model="#bowel"></a-entity>
     <!--model30-->
-    <a-entity position="1.40 0.85 -30.60" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#candy"></a-entity>
+    <a-entity position="1.40 0.85 -30.60"  n-mesh-collider="type: environment; convex: false" rotation="0 189 0" collada-model="#candy"></a-entity>
     <!--model31-->
-    <a-entity position="2 0.85 -30.20" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#spacedonut"></a-entity>
+    <a-entity position="2 0.85 -30.20"  n-mesh-collider="type: environment; convex: false" rotation="0 189 0" collada-model="#spacedonut"></a-entity>
     <!--model32-->
-    <a-entity position="1.33 0 -27.50" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#register"></a-entity>
+    <a-entity position="1.33 0 -27.50" n-mesh-collider="type: environment; convex: false" rotation="0 189 0" collada-model="#register"></a-entity>
     <!--model33-->
     <a-entity position="17 0 -13" n-mesh-collider="enabled: true; type: environment" rotation="0 10 0" collada-model="#rocket">
       <a-animation attribute="position" direction='alternate' from='17 -2 -13' to='17 30 -13' ease-in-out='linear' dur='10700' repeat='indefinite' />
@@ -188,31 +188,29 @@
     <a-entity n-object='res:effects/steam'>
       <a-animation attribute="position" direction='alternate' from='17 -2 -13' to='17 28 -13' ease-in-out='linear' dur='10700' repeat='indefinite' /></a-entity>
     <!--model34-->
-    <a-entity position="-15 0 6" rotation="0 90 0" altspace-cursor-collider="enabled: false" collada-model="#canada"></a-entity>
+    <a-entity position="-15 0 6" rotation="0 90 0"  n-mesh-collider="type: environment; convex: false" collada-model="#canada"></a-entity>
     <!--model35-->
-    <a-entity position="-15 0 6" n-mesh-collider="enabled: true; type: environment" collada-model="#canadatable"></a-entity>
+    <a-entity position="-15 0 6" n-mesh-collider="type: environment; convex: false" collada-model="#canadatable"></a-entity>
     <!--model36-->
-    <a-entity position="-15 1 6" n-mesh-collider="enabled: true; type: environment" rotation="0 90 0" collada-model="#candy"></a-entity>
+    <a-entity position="-15 1 6"  n-mesh-collider="type: environment; convex: false" rotation="0 90 0" collada-model="#candy"></a-entity>
     <!--model37-->
-    <a-entity position="1 0 -32.12" n-mesh-collider="enabled: true; type: environment" rotation="0 -90 0" collada-model="#digimon"></a-entity>
+    <a-entity position="1 0 -32.12" n n-mesh-collider="type: environment; convex: false" rotation="0 -90 0" collada-model="#digimon"></a-entity>
     
     
     <!--model38-->
 
-    <a-entity position="30 0 0" rotation="0 180 0" altspace-cursor-collider="enabled: false" collada-model="#galery"></a-entity>
+    <a-entity position="30 0 0" rotation="0 180 0"  n-mesh-collider="type: environment; convex: false" collada-model="#galery"></a-entity>
  <!--model39-->
 
-    <a-entity position="30 0 2" rotation="0 90 0" n-mesh-collider="enabled: true; type: environment" collada-model="#lounge"></a-entity>
+    <a-entity position="30 0 2" rotation="0 90 0"  n-mesh-collider="type: environment; convex: false" collada-model="#lounge"></a-entity>
      <!--model40-->
-    <a-entity position="30 0.02 -2" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#table"></a-entity>
-       <!--model40-->
-    <a-entity position="30 0.02 -2" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#table"></a-entity>
+    <a-entity position="30 0.02 -2"  n-mesh-collider="type: environment; convex: false" rotation="0 189 0" collada-model="#table"></a-entity>
       <!--model41-->
-    <a-entity position="30 0.80 -2" n-mesh-collider="enabled: true; type: environment" rotation="0 90 0" collada-model="#soup"></a-entity>
+    <a-entity position="30 0.80 -2" n-mesh-collider="type: environment; convex: false" rotation="0 90 0" collada-model="#soup"></a-entity>
       <!--model42-->
-    <a-entity position="29.60 0.80 -1.70" n-mesh-collider="enabled: true; type: environment" rotation="0 90 0" collada-model="#icecream"></a-entity>
+    <a-entity position="29.60 0.80 -1.70" n-mesh-collider="type: environment; convex: false" rotation="0 90 0" collada-model="#icecream"></a-entity>
         <!--model31-->
-    <a-entity position="30.40 0.85 -1.70" n-mesh-collider="enabled: true; type: environment" rotation="0 189 0" collada-model="#spacedonut"></a-entity>
+    <a-entity position="30.40 0.85 -1.70"  n-mesh-collider="type: environment; convex: false" rotation="0 189 0" collada-model="#spacedonut"></a-entity>
     <!--canadain song-->
 
     <a-entity position="-15 1.10 6.30">

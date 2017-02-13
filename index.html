@@ -50,6 +50,9 @@
       <a-asset-item id="lounge" src="https://rawgit.com/Lia021/model/master/chair%202.dae"></a-asset-item>
       <a-asset-item id="soup" src="https://rawgit.com/Lia021/theater-space/master/soup/c-soup.dae"></a-asset-item>
       <a-asset-item id="icecream" src="https://rawgit.com/Lia021/theater-space/master/ice/c-ice.dae"></a-asset-item>
+      <a-asset-item id="bathhouse" src="https://rawgit.com/Lia021/model/master/bath/bathhouse.dae"></a-asset-item>
+      <a-asset-item id="tub" src="https://rawgit.com/Lia021/model/master/tub/bathtub.dae"></a-asset-item>
+          <a-asset-item id="barrel" src="https://rawgit.com/Lia021/model/master/barrel/barrel%20bath.dae"></a-asset-item>
     </a-assets>
 
 
@@ -209,8 +212,25 @@
     <a-entity position="30 0.80 -2" n-mesh-collider="type: environment; convex: false" rotation="0 90 0" collada-model="#soup"></a-entity>
     <!--model42-->
     <a-entity position="29.60 0.80 -1.70" n-mesh-collider="type: environment; convex: false" rotation="0 90 0" collada-model="#icecream"></a-entity>
-    <!--model31-->
+    <!--model43-->
     <a-entity position="30.40 0.85 -1.70" n-mesh-collider="type: environment; convex: false" rotation="0 189 0" collada-model="#spacedonut"></a-entity>
+    <!--model44-->
+ <a-entity position="0 0 40" n-mesh-collider="type: environment; convex: false" collada-model="#bathhouse"></a-entity>
+     <!--model45-->
+    <a-entity position="-2 0 38" n-mesh-collider="type: environment; convex: false" scale="1.50 1.50 1.50"collada-model="#tub"></a-entity>
+         <!--model46-->
+    <a-entity position="-2 0 42" n-mesh-collider="type: environment; convex: false" scale="1.50 1.50 1.50"collada-model="#tub"></a-entity>
+         <!--model47-->
+    <a-entity position="1 0 39" n-mesh-collider="type: environment; convex: false" scale="1.40 1.40 1.40"collada-model="#barrel"></a-entity>
+         <!--model48-->
+    <a-entity position="1 0 43" n-mesh-collider="type: environment; convex: false" scale="1.40 1.40 1.40"collada-model="#barrel"></a-entity>
+    <!--bath water-->
+    <a-cylinder src="https://rawgit.com/Lia021/theater-space/master/lavender_texture.jpg"position="1 0.60 43"altspace-cursor-collider="enabled: false" height="0.90" radius="0.50"></a-cylinder>
+    <a-cylinder src="https://rawgit.com/Lia021/theater-space/master/pepper.jpg"position="1 0.60 39" height="0.90"altspace-cursor-collider="enabled: false" radius="0.50"></a-cylinder>
+   <!--bathtub water-->
+    <a-box src="https://rawgit.com/Lia021/theater-space/master/pepper.jpg" altspace-cursor-collider="enabled: false"depth="2.50" height="0.20" width="2.50"position="-2 0.10 38"></a-box>
+    <a-box src="https://rawgit.com/Lia021/theater-space/master/lavender_texture.jpg"altspace-cursor-collider="enabled: false" depth="2.50" height="0.20" width="2.50"position="-2 0.10 42"></a-box>
+
     <!--canadain song-->
 
     <a-entity position="-15 1.10 6.30">
@@ -242,6 +262,10 @@
     <a-entity n-billboard n-text="fontSize: 2; text:Sweetshop" position="1 1.70 -27"></a-entity>
     <!--text5-->
     <a-entity n-billboard n-text="fontSize: 2; text:Reststop" position="25 1.70 2"></a-entity>
+       <!--text6-->
+    <a-entity n-billboard n-text="fontSize: 2; text:women" position="4 1.70 43.50"></a-entity>
+       <!--text7-->
+    <a-entity n-billboard n-text="fontSize: 2; text:men" position="4 1.70 36.50"></a-entity>
     <!--power-->
     <a-entity position="0 5 0">
       <a-entity position="0 30 70" scale="4 4 4" n-mesh-collider="enabled: true; type: environment" rotation="0 -90 0" collada-model="#power">
